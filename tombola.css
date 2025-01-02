@@ -58,3 +58,42 @@ header{
 main{
     padding:40px;
 }
+
+.numberExtraction{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.numberExtraction p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.numberExtraction button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px; 
+    margin: 0 auto; 
+}
+
+
+h3{
+    color: rgb(78, 70, 70);
+    font-size: 28px;
+}
+
+.extractionSection{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.extractionSection p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}

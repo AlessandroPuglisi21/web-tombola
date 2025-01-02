@@ -1,3 +1,5 @@
+let numeriUsciti = [];
+
 function generaNumeri() {
     const numeri = [];
     for (let i = 1; i <= 90; i++) { 
@@ -17,14 +19,24 @@ numeri.forEach(numero => {
 });
 
 function randomNumber(max){
-    return Math.floor(Math.random() * max ) + 1;
+    const numberExtracted = Math.floor(Math.random() * max ) + 1;
+    return numberExtracted
+    
 }
 
-function estraiNumero(){
-    const numeroEstratto = randomNumber(90)
-    const numeroEstrattoElement = document.getElementById('numeroEstratto')
-    numeroEstrattoElement.textContent = `${numeroEstratto}`
+function estraiNumero() {
+    const numeroEstratto = randomNumber(90);
+    if (!numeriUsciti.includes(numeroEstratto)) {
+        numeriUsciti.push(numeroEstratto);
+
+
+    document.getElementById('extractedNumber').textContent = numeriUsciti.join('-');
+    document.getElementById('numeroEstratto').textContent = numeroEstratto;
+
+    console.log(numeriUsciti);
+    } 
 }
+
 
 
 
